@@ -24,7 +24,7 @@ void merge(int *arr,int l,int mid,int r)
             arr[k++]=a1[i++];
         }
         else{
-            arr[k++]=a1[j++];
+            arr[k++]=a2[j++];
         }
     }
     while(i<n1){

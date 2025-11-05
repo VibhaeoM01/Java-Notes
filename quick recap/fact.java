@@ -1,13 +1,11 @@
 import java.util.Scanner;
 
-public class test1 {
+public class fact {
     
-    public static int fact(int v,int ans)
+    public static int fact(int n)
     {
-        if(v==1) return 1;
-        ans*=fact(v-1,ans);
-        return ans;
-        // return 1;
+        if(n==0 || n==1) return n;
+        return n*fact(n-1);
     }
     public static void main(String[] args) {
         int n=5;
@@ -17,7 +15,7 @@ public class test1 {
         //     ans*=i;
         // }
         // System.out.println(ans);
-        int fin=fact(n,1);
-        sout
+        int fin=fact(n);
+        System.out.println(fin);
     }
 }
