@@ -7,7 +7,8 @@ public class palindrome{
         int reverseOfn=0;
         while(n!=0)
         {
-            reverseOfn=(reverseOfn*10) + (n%10);
+            int LastNumber=n%10;
+            reverseOfn=(reverseOfn*10) + (LastNumber);
             n=n/10;
         }
         if(checkVariable==reverseOfn) return true;

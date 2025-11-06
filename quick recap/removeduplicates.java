@@ -9,18 +9,14 @@ public class removeduplicates {
             arr[i] = sc.nextInt();
         }
         sc.close();
-        ArrayList<Integer>arr1=new ArrayList<>();
-        HashSet<Integer>hs=new HashSet<>();
+        // ArrayList<Integer>arr1=new ArrayList<>();
+        // HashSet<Integer>hs=new HashSet<>();
+        LinkedHashSet<Integer>lhs= new LinkedHashSet<>();
         for(int i=0;i<n;i++)
-        {
-            if(!hs.contains(arr[i]))
-            {
-                 hs.add(arr[i]);
-                arr1.add(arr[i]);
-            }
-           
+        { 
+            lhs.add(arr[i]);
         }
-        System.out.println(hs);
+        System.out.println(lhs);
     }   
 }
 

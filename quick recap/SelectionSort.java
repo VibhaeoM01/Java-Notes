@@ -16,27 +16,23 @@ public class SelectionSort {
 
         ///Logic
         // It finds min number in whole iteration, after iterating, it swaps with i,
-        for(int i=0;i<n-1;i++)
+       for(int i=0;i<n-1;i++)
         {
-            int minInd=i;
+            int minIndex=i;
             for(int j=i+1;j<n;j++)
             {
-                if(arr[minInd]>arr[j])
+                if(arr[minIndex]>arr[j])
                 {
-                    minInd=j;
+                    minIndex=j;
                 }
             }
-            
-            // swap();
             int temp=arr[i];
-            arr[i]=arr[minInd];
-            arr[minInd]=temp;
+            arr[i]=arr[minIndex];
+            arr[minIndex]=temp;
         }
-
-
-        for(int i=0;i<n;i++)
+        for(int num:arr) 
         {
-            System.out.println(arr[i]);
+            System.out.println(num);
         }
         
         
